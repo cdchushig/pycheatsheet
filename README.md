@@ -1,18 +1,18 @@
-# How to create a virtualenv
+## How to create a virtualenv
 
-## Install virtualenv in os
+### Install virtualenv in os
 ```bash
 sudo apt-get install python-virtualenv
 sudo apt-get install python-pip
 sudo apt-get install python-tk
 ```
 
-## Create virtualenv with python2.7
+### Create virtualenv with python2.7
 ```bash
 virtualenv mykeras2
 ```
 
-## Create virtualenv with python3
+### Create virtualenv with python3
 ```bash
 virtualenv -p python3 mykeras3
 ```
@@ -26,3 +26,11 @@ their respective versions.
 pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
+
+### Install folder structure for ML projects
+```bash
+pip install cookiecutter
+cookiecutter https://github.com/drivendata/cookiecutter-data-science
+```
+
+
