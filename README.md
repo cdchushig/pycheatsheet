@@ -32,5 +32,12 @@ pip install -r requirements.txt
 pip install cookiecutter
 cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ```
+### Useful linux commands for handling files
+
+To display the largest files for humans.
+```bash
+du -hs * | sort -rh | head -5
+```
+
 
 
