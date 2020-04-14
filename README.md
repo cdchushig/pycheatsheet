@@ -39,5 +39,9 @@ To display the largest files for humans.
 du -hs * | sort -rh | head -5
 ```
 
+To find files with a specific pattern and remove them
+```bash
+find . -type f -name '*_2019_07_*' -print0 | xargs -r0 rm --
+```
 
 
