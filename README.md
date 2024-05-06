@@ -79,4 +79,7 @@ sudo du -ah . | sort -h -r | head -n 40
 find . -xdev -type f -size +50M -print | xargs ls -lh | sort -k5,5 -h -r
 ```
 
-
+To kill all processes by name and user:
+```shell script
+ps -ef | grep 'username' | grep 'python' | grep -v grep | xargs -r kill -9
+```
