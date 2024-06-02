@@ -83,3 +83,16 @@ To kill all processes by name and user:
 ```shell script
 ps -ef | grep 'username' | grep 'python' | grep -v grep | xargs -r kill -9
 ```
+
+Install different python version
+```shell script
+sudo apt install python3.11
+sudo apt-get install python3.11-distutils
+```
+
+Check python versions
+```shell script
+sudo update-alternatives --config python
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 5
+```
+
