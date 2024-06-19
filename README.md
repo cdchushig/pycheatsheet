@@ -96,3 +96,7 @@ sudo update-alternatives --config python
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 5
 ```
 
+To check disk usage by user:
+```shell script
+du -d 1 -h
+```
