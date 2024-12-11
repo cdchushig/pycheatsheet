@@ -82,6 +82,7 @@ find . -xdev -type f -size +50M -print | xargs ls -lh | sort -k5,5 -h -r
 To kill all processes by name and user:
 ```shell script
 ps -ef | grep 'username' | grep 'python' | grep -v grep | xargs -r kill -9
+ps -ef | grep 'david' | grep 'python' | grep -v grep | awk '{print $2}' | xargs -r kill -9
 ```
 
 Install different python version
@@ -100,3 +101,15 @@ To check disk usage by user:
 ```shell script
 du -d 1 -h
 ```
+
+To create virtualenv:
+```shell script
+virtualenv -p /usr/bin/python2.7 venv
+source venv/bin/activate
+```
+
+To create pipenv:
+```shell script
+pip install --user pipenv
+```
+
