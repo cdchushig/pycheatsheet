@@ -15,6 +15,12 @@ virtualenv mykeras2
 ### Create virtualenv with python3
 ```bash
 virtualenv -p python3 mykeras3
+virtualenv -p python3.10 venv310
+```
+
+### Update pip
+```bash
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 ```
 
 ## Manage virtualenvs
@@ -24,6 +30,13 @@ their respective versions.
 ```shell script
 pip freeze > requirements.txt
 pip install -r requirements.txt
+```
+
+### Create users in ubuntu
+```shell script
+sudo useradd -m user1
+sudo passwd user1
+sudo usermod -a -G bioml user1
 ```
 
 ### Install folder structure for ML projects
