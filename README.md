@@ -7,6 +7,15 @@ sudo apt-get install python-pip
 sudo apt-get install python-tk
 ```
 
+### Install different python versions in linux
+```shell
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.10 python3.10-venv python3.10-distutils
+```
+
 ### Create virtualenv with python2.7
 ```bash
 virtualenv mykeras2
