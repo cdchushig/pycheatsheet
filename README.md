@@ -46,6 +46,12 @@ pip install -r requirements.txt
 sudo useradd -m user1
 sudo passwd user1
 sudo usermod -a -G bioml user1
+sudo usermod -aG sudo user1 # add to sudousers
+```
+
+Change the shell for user
+```shell
+chsh -s /bin/bash user1
 ```
 
 ### Install folder structure for ML projects
